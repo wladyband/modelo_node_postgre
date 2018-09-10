@@ -6,10 +6,10 @@ class Routes {
     }
 
     getRoutes(app: Application): void {
-        app.routes('/')
+        app.route('/')
         .get((req: Request, res: Response) => res.send('ola mundo'));
         
-        app.routes('/ola/:nome')
+        app.route('/ola/:nome')
         .get((req: Request, res: Response) => res.send('ola, ${req.params.nome}'));
     }
 }
