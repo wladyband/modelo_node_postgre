@@ -7,8 +7,9 @@ const config = require('./config/env/config')();
 
 
 // tsc /server/server.ts
+////tsc -p
 
-const server = http.createServer();
+const server = http.createServer(Api);
 
 Api.use(errorHandlerApi);
 

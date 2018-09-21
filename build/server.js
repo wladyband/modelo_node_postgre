@@ -8,3 +8,6 @@ var config = require('./config/env/config')();
 var server = http.createServer();
 api_1.default.use(errorHandlerApi_1.errorHandlerApi);
 server.listen(config.serverPort, function () { return console.log('servidor rodando na porta 3000'); });
+
+
+
